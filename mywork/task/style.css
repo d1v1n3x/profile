@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bee;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
+  color: black;
+}
+.w-6 {
+  width: 1rem;
+}
+.h-6 {
+  height: 1rem;
+}
+.w-8 {
+  width: 1.2rem;
+}
+.h-8 {
+  height: 1.2rem;
+}
+.container {
+  width: 40rem;
+  margin: 1rem auto;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateY(8px) scale(0.99);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 2;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateY(16px) scale(0.98);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1;
+}
+.contents {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 9999;
+  padding: 1rem;
+}
+.input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.input > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.4rem 1rem;
+}
+.input > input::placeholder {
+  color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#list > .row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 3rem;
+}
+#list > .row > p {
+  flex: 1;
+}
+#list > .row > p.completed {
+  color: #ccc;
+  text-decoration: line-through;
+}
+#list > .row > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+}
+#list > .row > button:hover {
+  color: black;
+}
+#list > .row > .checkbox {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#list > .row > .checkbox.active {
+  color: rgb(0, 255, 217);
+}
+.actions {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+}
+.actions > button:last-child:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.actions > div {
+  display: flex;
+  gap: 1rem;
+}
+.actions > div > button.active {
+  border: 1px solid black;
+}
