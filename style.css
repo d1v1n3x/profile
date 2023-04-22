@@ -5,7 +5,7 @@
 }
 body {
   font-family: "IBMPlexMono-Regular";
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 header {
   position: sticky;
@@ -34,7 +34,7 @@ h3 {
   text-decoration: none;
 }
 .headerBtn:hover {
-  color: #bee;
+  color: #E8F5EB;
   cursor: pointer;
 }
 .list_item {
@@ -43,17 +43,24 @@ h3 {
 .profile_list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  aspect-ratio: 9/16;
 }
+
 .profile_item {
-  height: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  font-size: 3rem;
+}
+.profile_item p{
+  font-size: 2rem;
 }
 .showBtn {
+  font-size: 2rem;
   color: black;
   text-decoration: none;
 }
@@ -69,7 +76,7 @@ h3 {
   display: none;
   padding: 10px;
   font-size: 16px;
-  background-color: #bee;
+  background-color: #E8F5EB;
   color: black;
   border: none;
   border-radius: 4px;
@@ -77,7 +84,7 @@ h3 {
 }
 
 #topBtn:hover {
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 footer {
   display: flex;

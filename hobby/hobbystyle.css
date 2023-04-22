@@ -5,7 +5,7 @@
 }
 body {
   font-family: "IBMPlexMono-Regular";
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 header {
   position: sticky;
@@ -28,7 +28,7 @@ header {
 }
 
 .headerBtn:hover {
-  color: #bee;
+  color: #E8F5EB;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background-color: white;
-  color: #bee;
+  color: #E8F5EB;
 }
 .button:hover {
   display: inline-block;
@@ -82,7 +82,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background-color: black;
-  color: #bee;
+  color: #E8F5EB;
 }
 
 #topBtn {
@@ -92,7 +92,7 @@ img {
   display: none;
   padding: 10px;
   font-size: 16px;
-  background-color: #bee;
+  background-color: #E8F5EB;
   color: black;
   border: none;
   border-radius: 4px;
@@ -100,7 +100,7 @@ img {
 }
 
 #topBtn:hover {
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 
 footer {
