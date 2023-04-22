@@ -5,7 +5,7 @@
 }
 body {
   font-family: "IBMPlexMono-Regular";
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 header {
   position: sticky;
@@ -28,7 +28,7 @@ header {
 }
 
 .headerBtn:hover {
-  color: #bee;
+  color: #E8F5EB;
   cursor: pointer;
 }
 
@@ -40,6 +40,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  aspect-ratio: 3/5
 }
 .hobby_item {
   font-size: 2rem;
@@ -48,6 +50,17 @@ header {
 img {
   max-width: 100%;
   cursor: pointer;
+}
+.videoGame{
+  display: flex;
+  width: 100%;
+  aspect-ratio: 3/1;
+  align-items: center;
+  justify-content: space-around;
+}
+.game{
+  width: 40%;
+  aspect-ratio: 16/9;
 }
 
 .link-container {
@@ -73,7 +86,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background-color: white;
-  color: #bee;
+  color: #E8F5EB;
 }
 .button:hover {
   display: inline-block;
@@ -82,7 +95,7 @@ img {
   cursor: pointer;
   padding: 5px;
   background-color: black;
-  color: #bee;
+  color: #E8F5EB;
 }
 
 #topBtn {
@@ -92,7 +105,7 @@ img {
   display: none;
   padding: 10px;
   font-size: 16px;
-  background-color: #bee;
+  background-color: #E8F5EB;
   color: black;
   border: none;
   border-radius: 4px;
@@ -100,7 +113,7 @@ img {
 }
 
 #topBtn:hover {
-  background-color: #bee;
+  background-color: #E8F5EB;
 }
 
 footer {
