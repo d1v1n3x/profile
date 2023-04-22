@@ -51,16 +51,41 @@ img {
   max-width: 100%;
   cursor: pointer;
 }
-.videoGame{
-  display: flex;
-  width: 100%;
-  aspect-ratio: 3/1;
-  align-items: center;
-  justify-content: space-around;
+svg {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
-.game{
-  width: 40%;
+.gameObject{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 3/1;
+    align-items: center;
+    justify-content: center;
+}
+#myVideo{
+  width: 80%;
   aspect-ratio: 16/9;
+}
+
+#leftButton:hover, #rightButton:hover {
+  animation: wiggle 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .link-container {

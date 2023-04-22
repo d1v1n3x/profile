@@ -24,3 +24,23 @@ topBtn.onclick = function() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
+const myVideo = document.querySelector('#myVideo');
+const leftButton = document.querySelector('#leftButton');
+const rightButton = document.querySelector('#rightButton');
+
+leftButton.addEventListener('click', function() {
+  if (myVideo.getAttribute('src') === 'https://www.youtube.com/embed/7YPKX2WEmKc') {
+    myVideo.setAttribute('src', 'https://www.youtube.com/embed/G2mm4SfOj9Q');
+  } else {
+    myVideo.setAttribute('src', 'https://www.youtube.com/embed/7YPKX2WEmKc');
+  }
+});
+
+rightButton.addEventListener('click', function() {
+  if (myVideo.getAttribute('src') === 'https://www.youtube.com/embed/7YPKX2WEmKc') {
+    myVideo.setAttribute('src', 'https://www.youtube.com/embed/G2mm4SfOj9Q');
+  } else {
+    myVideo.setAttribute('src', 'https://www.youtube.com/embed/7YPKX2WEmKc');
+  }
+});
