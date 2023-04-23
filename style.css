@@ -19,6 +19,8 @@ header {
 .clock{
   position: fixed;
   border: none;
+  width: 20%;
+  aspect-ratio: 1/1;
   z-index: -1;
   padding-top: 10px;
   padding-left: 10px;

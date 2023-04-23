@@ -32,6 +32,8 @@ header {
   cursor: pointer;
 }
 .clock{
+  width: 20%;
+  aspect-ratio: 1/1;
   position: fixed;
   border: none;
   z-index: -1;
