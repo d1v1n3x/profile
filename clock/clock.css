@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #E8F5EB;
+}
+
+.clock {
+  width: 50vw;
+  aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+  }
+  
+  .clock div {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: #E8F5EB;
+    transform-origin: 100%;
+  }
+  
+  .hour-hand {
+    z-index: 3;
+    transform: rotate(90deg);
+    top: 25vw;
+  }
+  
+  .minute-hand {
+    z-index: 2;
+    transform: rotate(90deg);
+    top: 25vw;
+  }
+  
+  .second-hand {
+    z-index: 1;
+    transform: rotate(90deg);
+    top: 25vw;
+  }
+  

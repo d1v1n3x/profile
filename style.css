@@ -16,6 +16,14 @@ header {
   text-align: center;
   z-index: 1000;
 }
+.clock{
+  position: fixed;
+  border: none;
+  z-index: -1;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
 
 h1 {
   font-size: 60px;
