@@ -1,4 +1,7 @@
 const myImage = document.querySelector('#myImage');
+const myVideo = document.querySelector('#myVideo');
+const leftButton = document.querySelector('#leftButton');
+const rightButton = document.querySelector('#rightButton');
 var topBtn = document.getElementById("topBtn");
 
 
@@ -24,10 +27,6 @@ topBtn.onclick = function() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
-
-const myVideo = document.querySelector('#myVideo');
-const leftButton = document.querySelector('#leftButton');
-const rightButton = document.querySelector('#rightButton');
 
 leftButton.addEventListener('click', function() {
   if (myVideo.getAttribute('src') === 'https://www.youtube.com/embed/7YPKX2WEmKc') {

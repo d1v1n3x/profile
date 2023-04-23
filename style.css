@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "IBMPlexMono-Regular";
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
   background-color: #E8F5EB;
 }
