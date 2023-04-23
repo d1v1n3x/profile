@@ -67,6 +67,12 @@ svg {
   width: 80%;
   aspect-ratio: 16/9;
 }
+#leftButton{
+  padding-right: 10px;
+}
+#rightButton{
+  padding-left: 10px;
+}
 
 #leftButton:hover, #rightButton:hover {
   animation: wiggle 0.5s;
