@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fculculator.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <header>
+      <div class="bottom"></div>
+    </header>
+    <main>
+      <section class="nomal-calculator">
+        <div class="n-calc-title">
+          <p class="n-calc-title-i">"</p>
+          <h2 class="n-calc-title-i">Calculator</h2>
+          <p class="n-calc-title-i">"</p>
+        </div>
+        <iframe
+          class="n-calc"
+          src="/profile/mywork/calculator/calculator.html"
+          frameborder="0"
+        ></iframe>
+      </section>
+      <section class="microwave-calc">
+        <div>
+          <div class="m-calc-title">
+            <p class="m-calc-title-i">"</p>
+            <h2 class="m-calc-title-i">microwave calculator</h2>
+            <p class="m-calc-title-i">"</p>
+          </div>
+          <div class="m-calc-input">
+            <input type="number" name="b_w1" id="b_w1" value="500" />
+            <p>W</p>
+            <input type="number" name="b_min" id="b_min" />
+            <p>minute</p>
+            <input type="number" name="b_sec" id="b_sec" />
+            <p>second</p>
+          </div>
+          <div class="m-calc-input2">
+            <input type="number" name="b_w2" id="b_w2" value="600" />
+            <p>W</p>
+          </div>
+          <div class="m-calc-output">
+            <input type="button" value="calculate" onclick="mw_calc()" />
+            <span id="result"></span>
+          </div>
+        </div>
+      </section>
+      <section class="bmi-calc">
+        <div class="m-title">
+          <p class="m-title-i">"</p>
+          <h2 class="m-title-i">BMI Calculator</h2>
+          <p class="m-title-i">"</p>
+        </div>
+        <div class="main-contents">
+          <div class="height-unit">
+            <p>height</p>
+            <div class="input-height">
+              <input type="number" id="shincho" />
+              <p>cm</p>
+            </div>
+          </div>
+          <div class="weight-unit">
+            <p>weight</p>
+            <div class="input-weight">
+              <input type="number" id="taijuu" />
+              <p>kg</p>
+            </div>
+          </div>
+          <div class="calc-btn">
+            <button type="button" onclick="keisan()">
+              <p>praxis</p>
+            </button>
+          </div>
+          <div class="result">
+            <p>Your BMI</p>
+            <div>
+              <span id="kuuran"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bottom"></div>
+      </footer>
+    </main>
+    <script src="/functioncalculator/fcalculator.js"></script>
+  </body>
+</html>
